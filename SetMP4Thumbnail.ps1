@@ -41,7 +41,8 @@ try
 catch [System.Management.Automation.CommandNotFoundException]
 {
     throw [System.Management.Automation.CommandNotFoundException] `
-          ("FFmpeg is not installed on this system!" `          +"`nInstall FFmpeg for this script to function!")
+          ("FFmpeg is not installed on this system!" `
+          +"`nInstall FFmpeg for this script to function!")
 }
 
 
